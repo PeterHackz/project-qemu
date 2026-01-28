@@ -37,9 +37,9 @@ The process is as follows:
 
 ## Requirements
 
-* ARM64 rootfs at `/opt/arm64-rootfs`.
-* `qemu-aarch64-static` or native arm64 host.
-* CMake.
+-   ARM64 rootfs at `/opt/arm64-rootfs`.
+-   `qemu-aarch64-static` or native arm64 host.
+-   CMake.
 
 ## Rootfs Setup
 
@@ -56,14 +56,15 @@ sudo chroot /opt/arm64-rootfs /debootstrap/debootstrap --second-stage
 ## Setup
 
 1. Copy the library to the chroot:
-   ```bash
-   cp libg.so /opt/arm64-rootfs/tmp/
-   ```
+
+    ```bash
+    cp libg.so /opt/arm64-rootfs/tmp/
+    ```
 
 2. Configure CMake (if not already done):
-   ```bash
-   cmake -DCMAKE_TOOLCHAIN_FILE=aarch64-clang-toolchain.cmake -B build
-   ```
+    ```bash
+    cmake -DCMAKE_TOOLCHAIN_FILE=aarch64-clang-toolchain.cmake -B build
+    ```
 
 ## Run
 
@@ -75,11 +76,8 @@ Use `./run.sh` to build and chroot exec:
 
 ## Contacts
 
-- Discord: `@s.b`
-- Email: `mail@peterr.dev` or `me@peterr.dev`
-- [Discord Server](https://discord.peterr.dev)
+-   Discord: `@s.b`
+-   Email: `mail@peterr.dev` or `me@peterr.dev`
+-   [Discord Server](https://discord.peterr.dev)
 
 ## give a 🌟 because why not :p
-
----
-If you find this interesting, feel free to join my Discord: https://discord.peterr.dev
