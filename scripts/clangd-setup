@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CurrDirName=$(pwd)
+
+cat <<EOL >.clangd
+CompileFlags:
+  Add:
+    - -I$CurrDirName/include
+EOL
