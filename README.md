@@ -46,7 +46,7 @@ The process is as follows:
 Here are the commands to set up the `arm64` rootfs on a Debian/Ubuntu host:
 
 ```bash
-sudo apt install qemu-user-static debootstrap
+sudo apt install qemu-user-static debootstrap gcc-aarch64-linux-gnu
 sudo mkdir -p /opt/arm64-rootfs
 sudo debootstrap --arch=arm64 --foreign stable /opt/arm64-rootfs http://deb.debian.org/debian
 sudo cp /usr/bin/qemu-aarch64-static /opt/arm64-rootfs/usr/bin/
