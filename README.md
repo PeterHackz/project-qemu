@@ -39,7 +39,7 @@ At a high level, the process is as follows:
 - `qemu-aarch64-static` or native ARM64 host
 - CMake
 
-## Rootfs Setup
+## Rootfs Setup (~500mb of disk needed)
 
 Here are the commands to set up the `arm64` rootfs on a Debian/Ubuntu host:
 
